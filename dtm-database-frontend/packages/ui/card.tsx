@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react';
 
 export function Card({
   className,
@@ -12,7 +12,7 @@ export function Card({
   href: string;
 }): JSX.Element {
   return (
-    <a
+    <as
       className={className}
       href={`${href}?utm_source=create-turbo&utm_medium=basic&utm_campaign=create-turbo"`}
       rel="noopener noreferrer"
@@ -22,6 +22,6 @@ export function Card({
         {title} <span>-&gt;</span>
       </h2>
       <p>{children}</p>
-    </a>
+    </as>
   );
 }
