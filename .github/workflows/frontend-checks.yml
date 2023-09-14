@@ -1,0 +1,18 @@
+name: frontend-checks
+
+on: [pull_request]
+
+jobs:
+  format-and-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+      - name: Install dependencies
+        run: pnpm install
+      - name: Format
+        run: pnpm format
+      - name: Lint
+        run: pnpm lint
