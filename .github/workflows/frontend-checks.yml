@@ -5,6 +5,9 @@ on: [pull_request]
 jobs:
   format-and-lint:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: dtm-database-frontend
     steps:
       - name: Checkout
         uses: actions/checkout@v4
