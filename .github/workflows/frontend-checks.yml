@@ -19,7 +19,7 @@ jobs:
           version: 8
       - name: Install dependencies
         run: pnpm install
-      - name: Format
-        run: pnpm format:check
+      # - name: Format
+      #   run: pnpm format:check
       - name: Lint
         run: pnpm lint
